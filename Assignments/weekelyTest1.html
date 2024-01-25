@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #312f2f;  
+        }
+        .normal-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar{
+            padding: 0 8px 0 8px;
+            height: 60px;
+            background-color:#212121;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left{
+            height: 100%;
+            width: 30%;
+            min-width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: 600;
+
+        }
+        .right{
+            height: 100%;
+            width: 35%;
+            padding:0 8px ;
+            min-width: 100px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            /* background-color: green; */
+        }
+        .right input{
+            height: 40px;
+            width: 90%;
+            background-color: #2d2a2a;
+            border-radius: 5px;
+            border: none;
+            padding:0 20px;
+            color:#fff;
+            font-size: 0.95rem;
+        }
+        .right input::placeholder{
+            color:#fff;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .card-container{
+            /* background-color:red; */
+            padding: 40px 0 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .cards{
+            display: flex;
+            margin:10px 10px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 250px;
+            height: 500px;
+            background-color: #2d2a2a;
+            border: 2px solid rgb(162, 155, 155);
+        }
+        .img-div{
+            height: 40%;
+            width: 90%;
+            /* border: 2px solid red; */
+        }
+        .card-img{
+            height: 100%;
+            width: 100%;
+            border: 4px solid rgb(35, 34, 34);
+        }
+        .card-text{
+            width: 90%;
+            color: #ece3e3;
+        }
+        .card-link{
+            position: relative;
+            left: 50px;
+            font-weight: 600;
+        }
+
+        .footer{
+            background-color: #fff;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding: 20px 20px;
+        }
+        .footer-nav{
+            background-color: #2d2d2d;
+            height: 50px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .footer-nav-text{
+            padding: 0 20px;
+            font-weight: 600;
+        }
+        .footer-grid{
+            display: grid;
+            gap: 15px;
+            margin-top: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 250px 250px;
+        }
+        
+        .footer-grid-item{
+            min-width: 365px;
+        }
+        .side-side{
+            display: flex;
+            align-items: center;
+        }
+        .black-div{
+            font-weight: 600;
+            background-color: #2d2a2a;
+            height: 70px;
+            width: 70px;
+            margin-right:30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-footer-text{
+            padding: 10px 30px 10px 0;
+            color: #746f6f;
+        }
+        .side-side h1{
+            color: #4d4949;
+        }
+        .footer-para{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            font-size: 0.85rem;
+        }
+        hr{
+            width: 85%;
+            border: 1px solid gray;
+            
+        }
+        @media (max-width:1200px)
+        {
+            .footer-grid{
+            grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width:830px)
+        {
+            .footer-grid{
+            grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+   <nav>
+        <div class="navbar">
+            <div class="left">
+                <span class="left-item">HOME</span>
+                <span class="left-item">PORTFOLIO</span>
+                <span class="left-item">ABOUT US</span>
+                <span class="left-item">CONTACT</span>
+            </div>
+            <div class="right">
+                <input type="text" placeholder="Search website">
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="cards">
+                <h1>Illustrator</h1>
+                <hr>
+                <div class="img-div">
+                    <img class="card-img" src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-618833.jpg&fm=jpg">
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, laboriosam iste et excepturi quos consequuntur reprehenderit, odio, aliquid eligendi accusantium beatae aperiam placeat facere at id ab velit iusto. Velit </p>
+                <span class="card-link">Read More >></span>
+            </div>
+            <div class="cards">  
+                <h1>InDesign</h1>
+                <hr>
+                <div class="img-div">
+                    <img class="card-img" src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-618833.jpg&fm=jpg">
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, laboriosam iste et excepturi quos consequuntur reprehenderit, odio, aliquid eligendi accusantium beatae aperiam placeat facere at id ab velit iusto. Velit </p>
+                <span class="card-link">Read More >></span></div>
+            <div class="cards">  
+                <h1>Flash</h1>
+                <hr>
+                <div class="img-div">
+                    <img class="card-img" src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-618833.jpg&fm=jpg">
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, laboriosam iste et excepturi quos consequuntur reprehenderit, odio, aliquid eligendi accusantium beatae aperiam placeat facere at id ab velit iusto. Velit </p>
+                <span class="card-link">Read More >></span></div>
+            <div class="cards">  <h1>After Effects</h1>
+                <hr>
+                <div class="img-div">
+                    <img class="card-img" src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-618833.jpg&fm=jpg">
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, laboriosam iste et excepturi quos consequuntur reprehenderit, odio, aliquid eligendi accusantium beatae aperiam placeat facere at id ab velit iusto. Velit </p>
+                <span class="card-link">Read More >></span></div>
+            <div class="cards">  <h1>Light Wave 3D</h1>
+                <hr>
+                <div class="img-div">
+                    <img class="card-img" src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-618833.jpg&fm=jpg">
+                </div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, laboriosam iste et excepturi quos consequuntur reprehenderit, odio, aliquid eligendi accusantium beatae aperiam placeat facere at id ab velit iusto. Velit </p>
+                <span class="card-link">Read More >></span></div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-nav">
+                <span class="footer-nav-text">OUR SERVICES</span>
+                <span class="footer-nav-text">LATEST PRODUCTS</span>
+                <span class="footer-nav-text">PORTFOLIO EXAMPLE</span>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-grid-item">
+                    <div class="side-side">
+                        <div class="black-div">
+                            <p>46</p>
+                            <p>x</p>
+                            <p>46</p>
+                        </div>
+                        <h1>Lorem ipsum dolor sit.</h1>
+                    </div>
+                    <div class="grid-footer-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum architecto nostrum ipsam nulla repudiandae rerum officiis praesentium at qui aut repellat fugit accusantium ut facilis doloremque quam odio molestiae, deserunt sit dolorum sapiente, maxime similique! Id harum eligendi aliquam et sint error ex, amet cupiditate quidem explicabo doloribus veniam accusantium magni sapiente autem ut natus.</p>
+                    </div>
+                </div>
+                <div class="footer-grid-item"><div class="side-side">
+                        <div class="black-div">
+                            <p>46</p>
+                            <p>x</p>
+                            <p>46</p>
+                        </div>
+                        <h1>Lorem ipsum dolor sit.</h1>
+                    </div>
+                    <div class="grid-footer-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum architecto nostrum ipsam nulla repudiandae rerum officiis praesentium at qui aut repellat fugit accusantium ut facilis doloremque quam odio molestiae, deserunt sit dolorum sapiente, maxime similique! Id harum eligendi aliquam et sint error ex, amet cupiditate quidem explicabo doloribus veniam accusantium magni sapiente autem ut natus.</p>
+                    </div></div>
+                <div class="footer-grid-item"><div class="side-side">
+                        <div class="black-div">
+                            <p>46</p>
+                            <p>x</p>
+                            <p>46</p>
+                        </div>
+                        <h1>Lorem ipsum dolor sit.</h1>
+                    </div>
+                    <div class="grid-footer-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum architecto nostrum ipsam nulla repudiandae rerum officiis praesentium at qui aut repellat fugit accusantium ut facilis doloremque quam odio molestiae, deserunt sit dolorum sapiente, maxime similique! Id harum eligendi aliquam et sint error ex, amet cupiditate quidem explicabo doloribus veniam accusantium magni sapiente autem ut natus.</p>
+                    </div></div>
+                <div class="footer-grid-item"><div class="side-side">
+                        <div class="black-div">
+                            <p>46</p>
+                            <p>x</p>
+                            <p>46</p>
+                        </div>
+                        <h1>Lorem ipsum dolor sit.</h1>
+                    </div>
+                    <div class="grid-footer-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum architecto nostrum ipsam nulla repudiandae rerum officiis praesentium at qui aut repellat fugit accusantium ut facilis doloremque quam odio molestiae, deserunt sit dolorum sapiente, maxime similique! Id harum eligendi aliquam et sint error ex, amet cupiditate quidem explicabo doloribus veniam accusantium magni sapiente autem ut natus.</p>
+                    </div></div>
+                <div class="footer-grid-item"><div class="side-side">
+                        <div class="black-div">
+                            <p>46</p>
+                            <p>x</p>
+                            <p>46</p>
+                        </div>
+                        <h1>Lorem ipsum dolor sit.</h1>
+                    </div>
+                    <div class="grid-footer-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum architecto nostrum ipsam nulla repudiandae rerum officiis praesentium at qui aut repellat fugit accusantium ut facilis doloremque quam odio molestiae, deserunt sit dolorum sapiente, maxime similique! Id harum eligendi aliquam et sint error ex, amet cupiditate quidem explicabo doloribus veniam accusantium magni sapiente autem ut natus.</p>
+                    </div></div>
+                <div class="footer-grid-item"><div class="side-side">
+                        <div class="black-div">
+                            <p>46</p>
+                            <p>x</p>
+                            <p>46</p>
+                        </div>
+                        <h1>Lorem ipsum dolor sit.</h1>
+                    </div>
+                    <div class="grid-footer-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum architecto nostrum ipsam nulla repudiandae rerum officiis praesentium at qui aut repellat fugit accusantium ut facilis doloremque quam odio molestiae, deserunt sit dolorum sapiente, maxime similique! Id harum eligendi aliquam et sint error ex, amet cupiditate quidem explicabo doloribus veniam accusantium magni sapiente autem ut natus.</p>
+                    </div></div>
+            </div>
+        </div>
+        <p class="footer-para">Made with love ❤️ @https_anuj1807</p>
+   </nav> 
+</body>
+</html>
