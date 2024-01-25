@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3rem;
+    }
+    .nav-div{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+    }
+    span{
+        background-color: red;
+        color: #fff;
+        padding: 10px 20px;
+    }
+    span:hover{
+        cursor: pointer;
+    }
+    span:hover +.list-div{
+        display: block;
+    }
+    li{
+        padding: 5px;
+    }
+    .list-div{
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        padding-right: 60px;
+        padding-bottom: 50px;
+        display: none;
+        box-shadow: 5px 5px 5px rgb(144,144,144);
+        
+    }
+</style>
+<body>
+    <h1>Hover on services to get effect</h1>
+    <div class="nav-div">
+        <span>Services</span>
+        <div class="list-div">
+            <ol type="1">
+                <li>Cloud Computing</li>
+                <li>Online Support</li>
+                <li>Shipping</li>
+                <li>Tutorial</li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+</html>

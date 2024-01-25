@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input{
+            margin: 20px 0;
+        }
+        body{
+            background-color: #2f2f2f;
+            color: #fff;
+            font-family: arial;
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 align="center">Form</h1>
+      <label for="uname">username</label>  <input type="text" placeholder="enter your username" id="uname" maxlength="10"><br>
+      password <input type="password" placeholder="enter your password"><br>
+      email <input type="email" placeholder="enter email"><br>
+
+      <h1>hobbies</h1>
+      <input type="checkbox" checked name="cb1"> cricket <br>
+      <input type="checkbox" name="cb2"> hockey <br>
+      <input type="checkbox" name="cb4"> football <br>
+
+      <h1>Gender</h1>
+      <input type="radio" name="gender">Female <br>
+      <input type="radio" name="gender">male <br>
+      <input type="radio" name="gender">other <br><br>
+
+      <h1>City</h1>
+      <select>
+        <option> chd</option>
+        <option> patiala</option>
+        <option selected> chitkara</option>
+      </select><br><br>
+
+      file <input type="file" name="upload"><br>
+      month <input type="month"><br>
+      time <input type="time"><br>
+      date-time <input type="datetime-local"><br>
+      color <input type="color"><br>
+      range <input type="range" ><br>
+      number <input type="number"> <br>
+
+
+       <br>
+      <input type="submit" value="submit">
+    </form>
+
+    <audio controls>
+        <source src="assests/game-over.wav" type="audio/wav">
+        
+    </audio>
+    <audio controls>
+        <source src="assests/reset.mp3" type="audio/mpeg">
+        
+    </audio>
+    <video controls>
+        <source src="assests/reset.mp3" type="audio/mpeg">
+        
+    </audio>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+        }
+        .main{
+            padding: 20px 0 20px 0;
+            width: 70vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 60px 60px 180px 180px 50px;
+            gap: 20px;
+        }
+        .header{
+            background-color: green;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            
+        }
+        .menu{
+            background-color: rgb(162, 219, 16);
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .box1{
+            background-color: rgb(26, 61, 168);
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .box2{
+            background-color: rgb(203, 66, 28);
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .content{
+            background-color: rgb(201, 50, 95);
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-end: 3;
+            grid-column-start: 1;
+        }
+        .sidebar{
+            background-color: rgb(71, 201, 48);
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-end: 4;
+            grid-column-start: 3;
+        }
+        .footer{
+            background-color: rgb(71, 201, 48);
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
